@@ -1,0 +1,23 @@
+.username {
+  float: right;
+  background-image: url(../../../assets/images/arw2.png);
+  width: 50%;
+  color: #FFF;
+  font-size: 14px;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (min-width: 979px) and (max-width: 1300px) {
+  .username {
+    margin-top: 0px;
+    margin-right: -10px;
+  }
+}
+
+.logo img {
+  margin: 0px 0px 0px 0px;
+  height: 65px;
+  width: 160px;
+}

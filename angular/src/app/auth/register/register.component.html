@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="content">
+    <div class="content_rgt">
+    <div class="register_sec">
+    <h1>Create An Account</h1>
+    <form [formGroup]="form" (submit)="onRegister()">
+      <ul>
+       <li> <span>Email</span>  <input type="text" placeholder="Enter your email" formControlName="email">
+       <div class="error" *ngIf="form.get('email').invalid && form.get('email').touched" >Enter Valid Email</div>
+       </li>
+      <li>
+       <span>Password</span>
+       <input type="password" [placeholder]="password" formControlName="password">
+       <div class="error" *ngIf="form.get('password').invalid && form.get('password').touched" >Enter Password</div>
+       </li>
+      <li>
+          <span>Confirm Password</span>
+          <input type="password" [placeholder]="confirmPassword" formControlName="confirmPassword">
+            <div class="error" *ngIf="form.get('confirmPassword').invalid && form.get('confirmPassword').touched && !confirmPasswordError" >Enter Password</div>
+            <div class="error" *ngIf="confirmPasswordError" >Password not matched</div>
+        </li>
+      <li>
+        <span>First Name</span>
+        <input type="text" placeholder="Enter your first name" formControlName="firstName" (click)="checkPassword()">
+          <div
+            class="error"
+            *ngIf="form.get('firstName').invalid && form.get('firstName').touched" >Enter First Name</div>
+        </li>
+      <li>
+        <span>Last Name</span>
+        <input
+          type="text"
+          placeholder="Enter your last name"
+          formControlName="secondName"
+          (click)="checkPassword()">
+        </li>
+      <li>
+        <input  type="checkbox" formControlName="termsCheck">I agree to Term & Conditions
+      </li>
+      <li>
+        <input type="submit" [value]="submitButton" [disabled]="this.form.invalid">
+      </li>
+      </ul>
+    </form>
+    <div
+      class="addtnal_acnt">
+      I already have an account.<a routerLink="/login">Login My Account !</a></div>
+    </div>
+
+    </div>
+    <div class="content_lft">
+    <h1>Welcome from GetSolution!</h1>
+    <h4>every solution at one place</h4>
+    <p class="discrptn"></p>
+    <img src="../../../assets/images/logo1.jpg"  alt=""/> </div>
+  </div>
+</div>
+<div class="clear"></div>

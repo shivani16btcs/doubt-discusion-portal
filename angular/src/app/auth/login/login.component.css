@@ -1,0 +1,8 @@
+.error {
+  color: red;
+}
+.content_lft img{
+  /* margin-left: 80px; */
+  height: 330px;
+  width: 500px;
+}

@@ -1,0 +1,7 @@
+.logout {
+  cursor: pointer;
+}
+
+.logout :hover {
+  background-color: blue;
+}

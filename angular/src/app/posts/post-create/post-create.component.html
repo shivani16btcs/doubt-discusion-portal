@@ -1,0 +1,41 @@
+<div class="form-style-8" [ngStyle]="{ visibility: showPopUp ? 'block' : 'hidden' }">
+  <form [formGroup]="form" (submit)="onPostUpload()">
+    <div>
+          <input type="text" placeholder="Enter your title" formControlName="title">
+            <div class="error" *ngIf="form.get('title').invalid && form.get('title').touched" >Enter A Title</div>
+    </div>
+    <div>
+<button type="button" class="left-margin image-button" mat-stroked-button (click)="filePicker.click()">
+        Pick Image
+      </button>
+<input type="file"
+        #filePicker
+        (change)="omImagePicked($event)">
+        <div class="error" *ngIf="!imageSelect">Please select a image</div>
+        <div
+          class="image-preview"
+          *ngIf="imagePreview !== '' && imagePreview && form.get('image').valid" >
+        <img [src]="imagePreview" [alt]="form.value.title">
+        </div>
+    </div>
+    <div>
+  <select id="petType" class="left-margin" class="select-type" formControlName="petType">
+          <option disabled="" selected="" value="">Subject</option>
+          <option value="maths">Maths</option>
+           <option value="physics">Physics</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="computer">Computer Science</option>
+          <option value="others">Others</option>
+  </select>
+    </div>
+    <div class="error" *ngIf="form.get('petType').value === '' && form.get('title').touched" >Enter Valid Subject Type</div>
+    <div>
+<input type="submit" [value]="postAction" [disabled]="form.value.invalid">
+
+<input type="submit" (click)='closePopUp()' value="Cancle">
+ 
+<input *ngIf="selectedPostId !== '' " type="button" (click)="deletePost()" value="Delete">
+    </div>
+</form>
+</div>
+

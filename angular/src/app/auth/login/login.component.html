@@ -1,0 +1,35 @@
+<div class="loading" *ngIf="isLoading" ></div>
+<div class="container">
+  <div class="content">
+    <div class="content_rgt">
+      <div class="login_sec">
+    <h1>Log In</h1>
+    <form [formGroup]="form" (submit)="onLogin()">
+      <ul>
+        <li> <span>Email-ID</span>
+        <input type="text" placeholder="Enter your email" formControlName="email"></li>
+        <div class="error" *ngIf="form.get('email').invalid && form.get('email').touched" >Enter Valid Email</div>
+        <li>
+          <span>Password</span>
+           <input type="password" placeholder="Enter your password" formControlName="password"></li>
+          <div class="error" *ngIf="form.get('password').invalid && form.get('password').touched" >Enter Password</div>
+        <li>
+          <input type="checkbox" formControlName="rememberMe">Remember Me</li>
+        <li>
+          <input type="submit" value="Log In" [disabled]="this.form.invalid">
+          <a routerLink="/forgetPassword">Forgot Password</a>
+        </li>
+        </ul>
+    </form>
+    <div class="addtnal_acnt">I do not have any account yet.<a routerLink="/register">Create My Account Now !</a></div>
+    </div>
+    </div>
+    <div class="content_lft">
+    <h1>Welcome from GetSolution!</h1>
+    <h4>every solution at one place</h4>
+    <p class="discrptn"></p>
+    <img src="../../../assets/images/logo1.jpg"  alt=""/> </div>
+  </div>
+</div>
+<div class="clear"></div>
+

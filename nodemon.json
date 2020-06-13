@@ -1,0 +1,10 @@
+{
+    "env": {
+        "PORT": 3000,
+        "JWT_KEY": "this_is_my_secret_key_for_password",
+        "EMAIL_VERIFICATION_KEY": "this_is_the_email_verificatin_token",
+        "USER": "anand.mishra@unthinkable.co",
+        "PASS": "Anandkmmmm",
+        "LOGIN_TOKEN": 3600
+    }
+}

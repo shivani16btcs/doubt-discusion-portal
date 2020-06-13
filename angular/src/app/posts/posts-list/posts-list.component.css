@@ -1,0 +1,39 @@
+.empty {
+  text-align: center;
+  color:black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.paginator {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.all-post {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.all-post-text {
+  font-weight: 800;
+  font-size: 20px;
+  color: chocolate;
+}
+
+.delete-button {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.delete-button-container {
+  text-align: right;
+}
+
+.list_icon img{
+  height: 50px;
+}
+
