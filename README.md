@@ -4,7 +4,7 @@
 3) database : mongodb
 
 ## for run
-1) for frontend server: do "cd Angular" run "npm install"  then "ng serve"
+1) for frontend server: do "cd angular" run "npm install"  then "ng serve"
 2) for backend server : do "npm install" then do "node app.js"
 
 ## for output 
