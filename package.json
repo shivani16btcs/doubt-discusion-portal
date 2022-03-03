@@ -22,6 +22,6 @@
   "scripts": {
     "start:server": "nodemon app.js"
   },
-  "author": "Anand",
+  "author": "",
   "license": "ISC"
 }
