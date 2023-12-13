@@ -4,6 +4,11 @@
 
 DoubtHub is a web application where students can engage in discussions, seeking help and sharing knowledge. Users can create posts with images, filter content by subject, time, likes, and answers, fostering a collaborative learning environment.
 
+# Key Features:
+Post Creation: Users can create posts, providing a space to articulate their doubts or share insights. The inclusion of images enhances communication.
+
+Filtering Options: The platform offers versatile filtering options, enabling users to refine content based on subjects, time (latest/oldest), number of likes, and number of answers.
+
 ## Project Technology
 
 - **Frontend:** Angular 2+
