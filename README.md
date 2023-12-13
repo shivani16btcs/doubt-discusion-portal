@@ -1,16 +1,28 @@
-## intro
-Web Application where Student can discuss their doubt with there colleagues and teacher by creating a post with image and they can also filter the post like on the bases of the subject, on the bases of time (latest/oldest), based on the number of likes, based on the number of answers, etc.
+# DoubtHub
 
+## Introduction
 
+DoubtHub is a web application where students can engage in discussions, seeking help and sharing knowledge. Users can create posts with images, filter content by subject, time, likes, and answers, fostering a collaborative learning environment.
 
-## project technology
-1) frontend : Angular2+
-2) backend : Nodejs
-3) database : mongodb
+## Project Technology
 
-## for run
-1) for frontend server: do "cd angular" run "npm install"  then "ng serve"
-2) for backend server : do "npm install" then do "node app.js"
+- **Frontend:** Angular 2+
+- **Backend:** Node.js
+- **Database:** MongoDB
 
-## for output 
-on browser type : http://localhost:4200/login
+## Getting Started
+
+### Frontend Server
+
+1. Navigate to the Angular directory: `cd angular`
+2. Install dependencies: `npm install`
+3. Run the development server: `ng serve`
+
+### Backend Server
+
+1. Install backend dependencies: `npm install`
+2. Start the server: `node app.js`
+
+## Viewing the Application
+
+Open your browser and go to [http://localhost:4200/login](http://localhost:4200/login) to access DoubtHub and start exploring collaborative learning.
