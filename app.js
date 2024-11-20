@@ -12,7 +12,7 @@ const app = express();
 app.use(cors()); 
 
 
-mongoose.connect("mongodb://localhost:27017/PPLdb",{useUnifiedTopology: true, useNewUrlParser: true})
+mongoose.connect("mongodb+srv://checkemailsend:egxzzWlJYEizDItf@cluster0.1mmgi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",{useUnifiedTopology: true, useNewUrlParser: true})
     .then(() => console.log('Database connected...'))
     .catch(() => console.log('DB not connected'));
 

@@ -27,7 +27,6 @@
               "src/assets/css/bootstrap.css",
               "src/assets/css/bootstrap-responsive.css",
               "node_modules/ngx-toastr/toastr.css"
-
             ],
             "scripts": [
               "src/assets/js/jquery.js",
@@ -97,8 +96,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -127,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ppl-project"
+    }
+  },
+  "defaultProject": "ppl-project",
+  "cli": {
+    "analytics": "a25f3117-0699-4792-9806-3f6f4f92a068"
+  }
 }
