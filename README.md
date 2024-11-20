@@ -11,8 +11,8 @@ Filtering Options: The platform offers versatile filtering options, enabling use
 
 ## Project Technology
 
-- **Frontend:** Angular 2+
-- **Backend:** Node.js
+- **Frontend:** Angular 2+  (version 16)
+- **Backend:** Node.js  (version 16) -- above 16 version project will not work 
 - **Database:** MongoDB
 
 ## Getting Started
